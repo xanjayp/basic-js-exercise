@@ -1,6 +1,6 @@
 // Write a JavaScript function that reverses a number. Example x = 32243; Expected Output : 34223
 const rev = (word) => {
-  const result = word.split("").reduce((a, b) => a + b, "");
+  const result = word.split("").reduce((a, b) => b + a, "");
   console.log(result);
 };
 rev("hey");
@@ -37,3 +37,17 @@ const prime = (n) => {
   else console.log("Prime");
 };
 prime(11);
+
+// Write a JavaScript function to get the number of occurrences of each letter in a specified string.
+const letter = (word) => {
+  const n = word.length;
+  const char = word.split("");
+
+  const re = char.reduce((a, b) => {
+    // if (a == b)
+    console.log(a, b);
+    a = b;
+  });
+  // console.log(char[i]);
+};
+letter("Hello World");
