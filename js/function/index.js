@@ -42,12 +42,14 @@ prime(11);
 const letter = (word) => {
   const n = word.length;
   const char = word.split("");
-
-  const re = char.reduce((a, b) => {
-    // if (a == b)
-    console.log(a, b);
-    a = b;
-  });
-  // console.log(char[i]);
+  for (i = 0; i < n; i++) {
+    console.log(char[i]);
+    for (j = 0; j < n; j++) {
+      if (char[i] == char[j]) {
+        console.log(1);
+      }
+    }
+    word.replace(char[i], "*");
+  }
 };
 letter("Hello World");
