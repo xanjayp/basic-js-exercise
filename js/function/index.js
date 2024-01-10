@@ -1,6 +1,6 @@
 // Write a JavaScript function that reverses a number. Example x = 32243; Expected Output : 34223
 const rev = (word) => {
-  const result = word.split("").reduce((a, cb) => a + b, "");
+  const result = word.split("").reduce((a, b) => a + b, "");
   console.log(result);
 };
 rev("hey");
@@ -25,3 +25,15 @@ const vowel = (string) => {
   console.log(c);
 };
 vowel("The quick brown fox");
+// Write a JavaScript function that accepts a number as a parameter and checks whether it is prime or not.
+const prime = (n) => {
+  const re = "";
+  for (i = 2; i <= n - 1; i++) {
+    if (n % i == 0) {
+      re = "np";
+    }
+  }
+  if (re == "np") console.log("Not Prime");
+  else console.log("Prime");
+};
+prime(11);
